@@ -46,13 +46,13 @@ input::placeholder {
 }
 
 .other select {
-  background-color: #e3e3e3; /* 灰色背景 */
-  color: #bbb; /* 白色文本 */
-  border: 1px solid #ccc; /* 边框颜色 */
-  padding: 10px; /* 内边距 */
-  border-radius: 2px; /* 圆角边框 */
-  margin-bottom: 20px; /* 下方间距 */
-  width: 100%; /* 宽度自适应 */
+  background-color: #e3e3e3;
+  color: #bbb; 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  border-radius: 2px;
+  margin-bottom: 20px; 
+  width: 100%; 
 }
 
 .other input[type="checkbox"] {
@@ -66,21 +66,22 @@ input::placeholder {
 
 /* 使 Birth Date 的输入框独占一行 */
 .other > div {
-  display: block; /* 确保 div 是块级元素 */
-  width: 100%; /* 使其宽度适应容器 */
-  margin-bottom: 20px; /* 确保每个字段之间有间距 */
+  display: block; 
+  width: 100%; 
+  margin-bottom: 20px; 
 }
 
 .signup-btn {
-  background-color: #4caf50; /* 按钮背景颜色 */
-  color: #fff; /* 按钮文字颜色 */
-  border: none; /* 去掉默认边框 */
-  padding: 15px 32px; /* 内边距 */
-  text-align: center; /* 文字居中 */
-  font-size: 16px; /* 字体大小 */
-  border-radius: 4px; /* 圆角边框 */
-  cursor: pointer; /* 鼠标样式 */
-  width: 100%; /* 宽度自适应 */
+  /* sign up点击框 */
+  background-color: #4caf50; 
+  color: #fff;
+  border: none; 
+  padding: 15px 32px; 
+  text-align: center; 
+  font-size: 16px; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  width: 100%; 
 }
 
 .signup-btn:hover {
@@ -90,10 +91,9 @@ input::placeholder {
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* 确保所有元素的 padding 和 border 不影响布局 */
-}
+  box-sizing: border-box;
 
 main {
-  margin-left: 50px; /* 左边的空白 */
-  margin-right: 50px; /* 右边的空白 */
+  margin-left: 50px; 
+  margin-right: 50px;
 }
