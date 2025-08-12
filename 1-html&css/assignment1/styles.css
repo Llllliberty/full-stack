@@ -74,7 +74,3 @@ input::placeholder {
   cursor: pointer; /* 鼠标样式 */
   width: 100%; /* 宽度自适应 */
 }
-
-.signup-btn:hover {
-  background-color: #45a049; /* 鼠标悬停时按钮颜色变化 */
-}
