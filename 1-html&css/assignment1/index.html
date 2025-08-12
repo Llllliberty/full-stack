@@ -1,0 +1,90 @@
+·<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sign Up</h1>
+    </header>
+    <main>
+      <section class="basic">
+        <h2>• Your basic info</h2>
+        <form class="contact-form" aria-label="Contact form">
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" required />
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name" required />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" required />
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+        </form>
+      </section>
+      <section class="other">
+        <h2>• Other details</h2>
+        <!-- Birth Date -->
+        <div>
+          <label for="bd">Birth Date</label>
+          <input
+            type="text"
+            name="bd"
+            id="bd"
+            placeholder="yyyy / mm / dd"
+            required
+          />
+        </div>
+
+        <!-- Gender -->
+        <div>
+          <label>Gender</label>
+          <div>
+            <input type="radio" value="male" name="gender" id="male" />
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input type="radio" value="female" name="gender" id="female" />
+            <label for="female">Female</label>
+          </div>
+          <div>
+            <input type="radio" value="other" name="gender" id="other" />
+            <label for="other">Other</label>
+          </div>
+        </div>
+
+        <!-- Country -->
+        <div>
+          <label for="country">Country</label>
+          <select name="country" id="country" required>
+            <option value="" disabled selected>China</option>
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+            <option value="india">India</option>
+            <option value="china">China</option>
+            <option value="brazil">Brazil</option>
+          </select>
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div>
+          <label for="terms">
+            <input type="checkbox" id="terms" name="terms" required />
+            I'm accepting the Terms and Conditions
+          </label>
+        </div>
+
+        <!-- Sign Up Button -->
+        <div>
+          <button type="submit" class="signup-btn">Sign Up</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

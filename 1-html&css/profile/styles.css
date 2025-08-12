@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 1rem;
+  /* rem相对根元素(html)的font size来计算的，是一个相对单位 */
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  /* 每个item中间会自动有一个1rem的间距 */
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  outline-offset: 2px;
+  outline-color: #0077cc;
+  outline-style: solid;
+  /* 支持无障碍，键盘focus时能看到聚焦状态outline */
+}
+
+.hero {
+  background-color: #e0eaff;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.products {
+  padding: 2rem 0;
+}
+
+.product-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* 每列最小宽度250px，最大可以到剩余空间的1fr */
+  /* auto-fit自动根据容器宽度挤满能放下的列数，列数自适应 */
+}
+
+.card {
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+.card p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.card button {
+  padding: 0.6rem 1rem;
+  background-color: #0077cc;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.card button:hover,
+.card button:focus {
+  background-color: #005fa3;
+  outline-offset: 2px;
+  outline-color: #005fa3;
+  outline-style: solid;
+}
+
+.about {
+  background-color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-sizing: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.contact {
+  background-color: #f8f8f8;
+  padding: 4rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  columns: #222;
+}
+
+.contact p {
+  max-width: 600px;
+  color: #555;
+  font-size: 1.1rem;
+  margin: 0 auto 2rem auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+.contact-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-form button {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+  background-color: #005fa3;
+  outline-offset: 2px;
+  outline-color: #005fa3;
+  outline-style: solid;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #222;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,89 @@
+header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-height: 200;
+  margin: 0 auto;
+  text-align: left;
+  border: 5px;
+}
+
+.basic input {
+  /* basic部分输入框 */
+  background-color: #e3e3e3;
+  color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+.other input {
+  /* basic部分输入框 */
+  background-color: #e3e3e3;
+  color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.other [for="bd"] {
+  display: flex;
+  flex-direction: column;
+  max-height: 200;
+  margin: 0 auto;
+  text-align: left;
+  border: 5px;
+}
+
+/* 日期输入框的格式提示 */
+input::placeholder {
+  color: #bbb;
+}
+
+.other label {
+  margin-right: 10px;
+}
+
+.other input[type="radio"] {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.other select {
+  background-color: #e3e3e3; /* 灰色背景 */
+  color: #bbb; /* 白色文本 */
+  border: 1px solid #ccc; /* 边框颜色 */
+  padding: 10px; /* 内边距 */
+  border-radius: 2px; /* 圆角边框 */
+  margin-bottom: 20px; /* 下方间距 */
+  width: 100%; /* 宽度自适应 */
+}
+
+.other input[type="checkbox"] {
+  margin-right: 10px; /* 设置勾选框和文本之间的间距 */
+}
+
+.other {
+  margin-bottom: 30px; /* 增加 gender 部分下方的空白 */
+}
+
+.signup-btn {
+  background-color: #4caf50; /* 按钮背景颜色 */
+  color: white; /* 按钮文字颜色 */
+  border: none; /* 去掉默认边框 */
+  padding: 15px 32px; /* 内边距 */
+  text-align: center; /* 文字居中 */
+  font-size: 16px; /* 字体大小 */
+  border-radius: 4px; /* 圆角边框 */
+  cursor: pointer; /* 鼠标样式 */
+  width: 100%; /* 宽度自适应 */
+}
+
+.signup-btn:hover {
+  background-color: #45a049; /* 鼠标悬停时按钮颜色变化 */
+}

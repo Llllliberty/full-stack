@@ -1,0 +1,101 @@
+<!-- semantic a11y seo -->
+<!-- command + / 注释 -->
+<!DOCTYPE html>
+<!-- 当前页面采取html5版本来显示网页，必须在第一行，文档类型生命标签-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 这句话必须写不然会乱码 GB2312简体中文 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 布局和大小 -->
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tech Gear</h1>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h2>Innovative Tech Gadgets</h2>
+        <p>
+          Explore our latest range of tech gear designed for performance and
+          style.
+        </p>
+      </section>
+      <section id="products" class="products" aria-label="Products list">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+              alt="Wireless Headphones"
+            />
+            <h3>Wireless Headphones</h3>
+            <p>High-quality sound with noise cancellation.</p>
+            <button type="button" aria-label="Buy Wireless Headphones">
+              Buy Now
+            </button>
+          </article>
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=300&q=80"
+              alt="Smart Watch"
+            />
+            <h3>Smart Watch</h3>
+            <p>Track your health and stay connected on the go.</p>
+            <button type="button" aria-label="Buy Smart Watch">Buy Now</button>
+          </article>
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=300&q=80"
+              alt="Portable Speaker"
+            />
+            <h3>Portable Speaker</h3>
+            <p>Crystal clear sound in a compact design.</p>
+            <button type="button" aria-label="Buy Portable Speaker">
+              Buy Now
+            </button>
+          </article>
+        </div>
+      </section>
+      <section id="about" class="about" aria-label="About Tech Gear">
+        <h2>About Us</h2>
+        <p>
+          We are passionate about creating innovative tech products that enhance
+          your lifestyle.
+        </p>
+      </section>
+      <section id="contact" class="contact" aria-label="Contact heading">
+        <h2>Get in Touch</h2>
+        <p>
+          Have a question or want to work together? Send us a message below and
+          we'll get back to you!
+        </p>
+        <form class="contact-form" aria-label="Contact form">
+          <label for="">Name</label>
+          <input type="text" name="name" id="name" />
+          <div>
+            <label for="">Gender</label>
+            <input type="radio" value="male" name="gender" id="male" />
+            <label for="female">female</label>
+            <input type="radio" value="female" name="gender" id="female" />
+          </div>
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Tech Gear. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
