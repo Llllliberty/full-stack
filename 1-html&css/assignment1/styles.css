@@ -31,15 +31,6 @@ header {
   margin-bottom: 20px;
 }
 
-.other [for="bd"] {
-  display: flex;
-  flex-direction: column;
-  max-height: 200;
-  margin: 0 auto;
-  text-align: left;
-  border: 5px;
-}
-
 /* 日期输入框的格式提示 */
 input::placeholder {
   color: #bbb;
@@ -74,7 +65,7 @@ input::placeholder {
 
 .signup-btn {
   background-color: #4caf50; /* 按钮背景颜色 */
-  color: white; /* 按钮文字颜色 */
+  color: #fff; /* 按钮文字颜色 */
   border: none; /* 去掉默认边框 */
   padding: 15px 32px; /* 内边距 */
   text-align: center; /* 文字居中 */
