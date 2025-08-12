@@ -60,7 +60,15 @@ input::placeholder {
 }
 
 .other {
-  margin-bottom: 30px; /* 增加 gender 部分下方的空白 */
+  display: flex;
+  flex-direction: column; /* 设置为纵向排列 */
+}
+
+/* 使 Birth Date 的输入框独占一行 */
+.other > div {
+  display: block; /* 确保 div 是块级元素 */
+  width: 100%; /* 使其宽度适应容器 */
+  margin-bottom: 20px; /* 确保每个字段之间有间距 */
 }
 
 .signup-btn {
@@ -77,4 +85,15 @@ input::placeholder {
 
 .signup-btn:hover {
   background-color: #45a049; /* 鼠标悬停时按钮颜色变化 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 确保所有元素的 padding 和 border 不影响布局 */
+}
+
+main {
+  margin-left: 50px; /* 左边的空白 */
+  margin-right: 50px; /* 右边的空白 */
 }
