@@ -129,7 +129,7 @@ header h1 {
 .contact h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  columns: #222;
+  color: #222;
 }
 
 .contact p {
