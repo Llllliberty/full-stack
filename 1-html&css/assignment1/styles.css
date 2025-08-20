@@ -1,99 +1,90 @@
-header {
-  text-align: center;
-  padding: 1rem;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  max-height: 200;
-  margin: 0 auto;
-  text-align: left;
-  border: 5px;
-}
-
-.basic input {
-  /* basic部分输入框 */
-  background-color: #e3e3e3;
-  color: #fff;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 2px;
-  margin-bottom: 20px;
-}
-.other input {
-  /* basic部分输入框 */
-  background-color: #e3e3e3;
-  color: #fff;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 2px;
-  margin-bottom: 20px;
-}
-
-/* 日期输入框的格式提示 */
-input::placeholder {
-  color: #bbb;
-}
-
-.other label {
-  margin-right: 10px;
-}
-
-.other input[type="radio"] {
-  margin-left: 5px;
-  margin-bottom: 5px;
-}
-
-.other select {
-  background-color: #e3e3e3;
-  color: #bbb; 
-  border: 1px solid #ccc; 
-  padding: 10px; 
-  border-radius: 2px;
-  margin-bottom: 20px; 
-  width: 100%; 
-}
-
-.other input[type="checkbox"] {
-  margin-right: 10px; /* 设置勾选框和文本之间的间距 */
-}
-
-.other {
-  display: flex;
-  flex-direction: column; /* 设置为纵向排列 */
-}
-
-/* 使 Birth Date 的输入框独占一行 */
-.other > div {
-  display: block; 
-  width: 100%; 
-  margin-bottom: 20px; 
-}
-
-.signup-btn {
-  /* sign up点击框 */
-  background-color: #4caf50; 
-  color: #fff;
-  border: none; 
-  padding: 15px 32px; 
-  text-align: center; 
-  font-size: 16px; 
-  border-radius: 4px; 
-  cursor: pointer; 
-  width: 100%; 
-}
-
-.signup-btn:hover {
-  background-color: #45a049; /* 鼠标悬停时按钮颜色变化 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-main {
-  margin-left: 50px; 
-  margin-right: 50px;
+h1 {
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(210, 233, 233);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  line-height: 30px;
+}
+
+.container div {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+input,
+textarea,
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.gender {
+  display: flex;
+  flex-wrap: raw;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+#about {
+  height: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.btn {
+  background-color: #4c8eaf;
+  width: 80%;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgb(0, 0, 0, 0.3);
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn::hover {
+  background-color: #3c74a9;
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .gender {
+    display: flex;
+    flex-direction: column;
+  }
 }

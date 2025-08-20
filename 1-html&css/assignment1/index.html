@@ -3,94 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Registration Form</title>
   </head>
   <body>
-    <header>
-      <h1>Sign Up</h1>
-    </header>
     <main>
-      <section class="basic">
-        <h2>• Your basic info</h2>
-        <form class="contact-form" aria-label="Contact form">
-          <label for="first-name">First Name</label>
-          <input type="text" name="first-name" id="first-name" required />
-
-          <label for="last-name">Last Name</label>
-          <input type="text" name="last-name" id="last-name" required />
-
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required />
-
-          <label for="username">Username</label>
-          <input type="text" name="username" id="username" required />
-
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" required />
-        </form>
-      </section>
-
-      <section class="other">
-        <h2>• Other details</h2>
-
-        <!-- Birth Date -->
-        <div>
-          <label for="bd">Birth Date</label>
+      <h1>Registration Form</h1>
+      <form action="" class="container">
+        <div class="firstName">
+          <label for="firstName" class="firstName">First Name</label>
+          <input type="text" name="firstName" placeholder="Andy" required />
+        </div>
+        <div class="lastName">
+          <label for="lastName" class="lastName">Last Name</label>
+          <input type="text" name="lastName" placeholder="Smith" required />
+        </div>
+        <div class="email">
+          <label for="email" class="email">Email Address</label>
           <input
-            type="text"
-            name="bd"
-            id="bd"
-            placeholder="yyyy / mm / dd"
+            type="email"
+            id="email"
+            placeholder="abc@example.com"
+            maxlength="100"
             required
           />
         </div>
-
-        <!-- Gender -->
-        <div>
-          <label>Gender</label>
-          <div>
-            <input type="radio" value="male" name="gender" id="male" />
-            <label for="male">Male</label>
-          </div>
-          <div>
-            <input type="radio" value="female" name="gender" id="female" />
-            <label for="female">Female</label>
-          </div>
-          <div>
-            <input type="radio" value="other" name="gender" id="other" />
-            <label for="other">Other</label>
-          </div>
+        <div class="password">
+          <label for="password" class="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            autocomplete="off"
+            placeholder="********"
+            minlength="8"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Password must contain at least 8 characters, including uppercase, lowercase, a number, and a special character."
+            required
+          />
         </div>
+        <div class="confirmPassword">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            class="confirmPassword"
+            id="confirmPassword"
+            autocomplete="new-password"
+            placeholder="********"
+            required
+          />
+        </div>
+        <div class="birthday">
+          <label for="birthday">Date of Birth</label>
+          <input type="date" id="birthday" required />
+        </div>
+        <div class="gender">
+          <label class="gender">Gender</label>
 
-        <!-- Country -->
-        <div>
-          <label for="country">Country</label>
-          <select name="country" id="country" required>
-            <option value="" disabled selected>Select your country</option>
-            <option value="usa">United States</option>
-            <option value="canada">Canada</option>
-            <option value="uk">United Kingdom</option>
-            <option value="australia">Australia</option>
-            <option value="india">India</option>
-            <option value="china">China</option>
-            <option value="brazil">Brazil</option>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" value="other" />
+          <label for="other">Other</label>
+        </div>
+        <div class="about">
+          <label for="about">About Me</label>
+          <textarea name="about" id="about" required></textarea>
+        </div>
+        <div class="profession">
+          <label for="profession">Choose Your Profession</label>
+          <select name="profession" id="profession" required>
+            <option value="">Please choose an option</option>
+            <option value="web-development">Web Development</option>
+            <option value="data-analytics">Data Analytics</option>
+            <option value="ui-ux-design">UI/UX Design</option>
           </select>
         </div>
-
-        <!-- Terms and Conditions -->
-        <div>
-          <label for="terms">
-            <input type="checkbox" id="terms" name="terms" required />
-            I'm accepting the Terms and Conditions
-          </label>
-        </div>
-
-        <!-- Sign Up Button -->
-        <div>
-          <button type="submit" class="signup-btn">Sign Up</button>
-        </div>
-      </section>
+        <button class="btn">Submit</button>
+      </form>
     </main>
   </body>
 </html>
