@@ -46,7 +46,7 @@ select {
 
 .gender {
   display: flex;
-  flex-wrap: raw;
+  flex-wrap: wrap;
 }
 
 .about {
@@ -73,7 +73,7 @@ select {
   cursor: pointer;
 }
 
-.btn::hover {
+.btn:hover {
   background-color: #3c74a9;
   transform: scale(1.05);
 }

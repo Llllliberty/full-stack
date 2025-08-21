@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
       <h1>Registration Form</h1>
       <form action="" class="container">
+        <!-- 用来创建表单区域，用户可以在此区域填写信息并提交 -->
+        <!-- 可以包含文本框，复选框，单选按钮，提交按钮等 -->
+        <!-- action 属性指定当表单提交时数据应该发送到哪里。这个属性指定了一个 URL，用户填写表单后，数据会被发送到该 URL 进行处理。 -->
         <div class="firstName">
           <label for="firstName" class="firstName">First Name</label>
+          <!-- label 标签为一个输入框（如文本框）提供描述或提示文字。用户点击这个标签时，光标会聚焦到与标签相关联的输入框中。
+           for="firstName"：for 属性将这个标签与 id="firstName" 的输入框关联起来。当用户点击这个标签时，浏览器会自动把焦点设置到对应的输入框上。 -->
           <input type="text" name="firstName" placeholder="Andy" required />
         </div>
         <div class="lastName">
