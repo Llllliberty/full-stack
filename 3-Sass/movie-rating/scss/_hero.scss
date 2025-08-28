@@ -1,0 +1,26 @@
+// 文字不透明，图片半透明效果
+.hero {
+  position: relative; //用来给伪元素做定位参考
+  height: 300px;
+  @include flex-center;
+  color: $text-color;
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  // 半透明背景图片
+  &::before {
+    content: "";
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80")
+      center/cover no-repeat;
+    position: absolute;
+    inset: 0; //top:0 right:0 bottom:0 left:0 覆盖整个父容器
+    opacity: 0.5;
+    z-index: -1; // 文字在上方，保证图片在文字下方
+  }
+
+  h1 {
+    // z-index只对定位元素生效，不包括static
+    position: relative;
+    z-index: 1;
+  }
+}
