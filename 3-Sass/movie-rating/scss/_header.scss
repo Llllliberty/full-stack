@@ -4,12 +4,10 @@ header {
   padding: $spacing-md $spacing-lg;
   color: white;
   background-color: $primary-color;
-
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
   }
-
   nav ul {
     @include flex-center;
     gap: $spacing-md;

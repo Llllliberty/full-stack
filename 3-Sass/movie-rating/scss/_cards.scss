@@ -1,4 +1,4 @@
-//% placeholder selector @extend它的时候生成对应的样式
+//% placeholder selector @extend它的时候才会生成对应的样式
 %card-style {
   background-color: white;
   border-radius: 8px;
@@ -32,7 +32,11 @@
       color: $primary-color;
       margin-bottom: $spacing-sm;
     }
-
+    .rating {
+      font-size: 1.3rem;
+      color: $primary-color;
+      margin-bottom: $spacing-sm;
+    }
     p {
       color: $text-color;
     }
