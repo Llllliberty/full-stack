@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- 页头部分 -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password generator</title>
@@ -12,19 +13,25 @@
     />
   </head>
   <body>
+    <!-- 主体内容 -->
     <main class="container">
       <header>
+        <!-- 页面的头部，包含页面的标题 -->
         <h1>Password Generator</h1>
       </header>
       <section class="result-container">
+        <!-- 密码显示区域，用来展示生成的密码 -->
         <p id="result" class="result-text"></p>
+        <!-- 显示生成的密码，其内容会通过 JavaScript 动态更新 -->
         <button
           class="btn"
           id="clipboard"
           type="button"
           aria-label="Copy to clipboard"
         >
+          <!-- 按钮，用来将生成的密码复制到剪贴板 -->
           <i class="far fa-clipboard"></i>
+          <!-- 用来在页面上显示一个图标 -->
         </button>
       </section>
       <section class="settings">

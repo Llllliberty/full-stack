@@ -1,3 +1,4 @@
+// 生成一个随机的小写字母
 function getRandomLower() {
   // ASCII中a的编码是97->a
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
@@ -18,6 +19,7 @@ function getRandomSymbol() {
   return symbols[Math.floor(Math.random() * symbols.length)]; //0-symbols.length - 1
 }
 
+// 生成随机字符的函数
 const randomFunc = {
   lower: getRandomLower,
   upper: getRandomUpper,
