@@ -1,0 +1,35 @@
+.nav-header {
+  display: flex; /* make it flex container */
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.nav-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-header .logo {
+  width: 180px;
+  height: 30px;
+}
+
+.nav-header .nav-link {
+  margin: 0 8px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.nav-header .nav-link:hover {
+  color: white;
+  background-color: rgb(255, 87, 87);
+  border: 1px solid black;
+}
