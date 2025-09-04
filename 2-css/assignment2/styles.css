@@ -1,60 +1,86 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.card-first-line,
+.card-second-line {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  color: white;
 }
 
-.card-container {
-  justify-content: center;
-  display: flex;
-  gap: 20px;
+.card-first-line .card-first-line-left,
+.card-second-line .card-first-line-left,
+.card-first-line .card-first-line-right,
+.card-second-line .card-first-line-right {
+  border: none;
+  border-radius: 8px;
+  height: 180px;
+  width: 280px;
+  margin: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
 }
 
-.card {
-  background: linear-gradient(135deg, #6a5af2, #00aaff);
+.card-first-line .card-first-line-left:hover,
+.card-second-line .card-first-line-left:hover,
+.card-first-line .card-first-line-right:hover,
+.card-second-line .card-first-line-right:hover {
+  transform: translateY(-5px);
+}
+
+h4 {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+p {
+  font-size: 0.5rem;
+  line-height: 1.1rem;
+  color: white;
+  margin: 10px 0;
+}
+
+.card-first-line .learn-more {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 0.4rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card-first-line .learn-more:hover {
+  transform: scale(1.1);
+}
+
+.card-first-line .card-first-line-left,
+.card-first-line .card-first-line-right {
+  padding: 30px 20px;
+}
+
+.card-first-line .card-first-line-left {
+  background-image: linear-gradient(
+      to bottom right,
+      rgb(83, 77, 255, 0.8),
+      rgba(220, 145, 253, 0.4)
+    ),
+    url("./IMG_6732.JPG");
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
-  padding: 20px;
-  width: 35%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-header h1 {
-  color: #fff;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-main p {
-  color: #f0f0f0;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.learn-more {
-  padding: 10px 20px;
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.learn-more:hover {
-  background-color: #fff;
-  color: #00aaff;
 }

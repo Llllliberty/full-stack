@@ -33,3 +33,84 @@
   background-color: rgb(255, 87, 87);
   border: 1px solid black;
 }
+
+.nav-search-icon {
+  margin-right: 12px;
+}
+
+.nav-header .button-sign-in {
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: transparent;
+  padding: 6px 12px;
+  margin: 0 8px;
+  transform: all 0.1s ease;
+}
+
+.nav-header .button-sign-in:hover {
+  box-shadow: 2px 2px;
+  transform: translate(-2px, -2px);
+}
+
+.nav-header .button-sign-up {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background-color: rgb(255, 87, 87);
+  padding: 6px 12px;
+  margin: 0 8px;
+  color: #fff;
+  transform: all 0.1s ease;
+}
+
+.nav-header .button-sign-up:hover {
+  box-shadow: #000 2px 2px;
+  transform: translate(-2px, -2px);
+  border: 1px solid #000;
+}
+
+.banner-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-content-left {
+  width: 70%;
+}
+
+.banner-content-right {
+  width: 30%;
+}
+
+.banner-content-header {
+  font-weight: 700;
+  color: rgb(255, 87, 87);
+}
+
+.banner-content-subheader {
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.banner-content-description {
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0px;
+  max-width: 552px;
+}
+
+.banner-content-button {
+  color: #fff;
+  background-color: rgb(255, 87, 87);
+  padding: 10px 24px;
+  border: 1px solid black;
+  box-shadow: black 2px 2px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.banner-content-button:hover {
+  color: #000;
+  background-color: rgb(255, 196, 196);
+}
