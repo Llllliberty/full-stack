@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Post Demo</h1>
+    </header>
+    <main class="container">
+      <section class="card">
+        <button id="btn-load" class="btn">Load posts</button>
+        <span id="status" class="status"></span>
+      </section>
+      <section class="card">
+        <h2>Create Post</h2>
+        <form id="create-form" class="form">
+          <label>
+            Title
+            <input
+              id="title"
+              type="text"
+              name="title"
+              placeholder="Enter title"
+              required
+            />
+          </label>
+          <label>
+            Body
+            <textarea
+              id="body"
+              placeholder="Write something"
+              rows="3"
+              required
+            ></textarea>
+          </label>
+          <div class="row">
+            <button class="btn" type="submit">Submit</button>
+            <span id="create-status" class="status"></span>
+          </div>
+        </form>
+      </section>
+      <section class="card">
+        <h2>Posts <span id="count">0</span></h2>
+        <ul class="items" id="posts"></ul>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

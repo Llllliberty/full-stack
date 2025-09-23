@@ -2,8 +2,14 @@
   "compilerOptions": {
     "target": "ES2017",
     "lib": ["DOM", "ES2017"],
-    "outFile": "mian.js",
-    "strict": true
+    "moduleResolution": "node",
+    "outFile": "main.js",
+    "strict": true,
+    "types": []
   },
   "files": ["main.ts"]
 }
+
+// npm init
+// npm i --save-dev typescript
+// npx tsc
